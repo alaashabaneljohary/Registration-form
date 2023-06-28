@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign Up Form">
+    <meta name="keywords" content="Sign Up Form " />
+    <!-- install Awesome  -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Install Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Install Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- Install CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Sign Up Form</title>
+</head>
+<body>
+<main class="form-body">
+  <div class="signup">
+    <div class="container">
+     <div class="row signup-content g-4 ">
+        <div class="col-md-6">
+            <h2>Create an account</h2>
+            <div class="form-content ">
+                <div class="form-group">
+                    <label for="firstName">
+                        <i class="fa-solid fa-user"></i>
+                    </label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Your Name">
+                    <p id="usernameAlert" class="d-none text-dark fw-bold">include at least 3 letters starting with capital, second name is optional</p>
+                </div>
+                <div class="form-group">
+                    <label for="YourEmail">
+                        <i class="fa-solid fa-envelope"></i>
+                    </label>
+                    <input type="email" class="form-control" id="YourEmail" name="YourEmail" placeholder="Your Email">
+                    <p id="userEmailAlert" class="d-none text-dark fw-bold">name@example.com</p>
+                </div>
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fa-solid fa-lock"></i>
+                    </label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder=" Password">
+                    <p id="userPasswordAlert" class="d-none text-dark fw-bold">you must strenth your password, from 5 to 15 characters</p>
+                </div>
+                <a href="#" class="button" id="signUp" onclick="signUp()" > Sign Up</a>
+                <p class="text-dark d-none fw-bolder mb-0" id="accountExistMsg">this account is exist ! Try another one.</p>
+                <p class=" d-none" id="confirmMsg">Success</p>
+                <p class="text-dark d-none fw-bolder" id="tryAgainMsg">signUp failed ! Try again</p>
+                <p class="text">You Have An Account? <a href="index.html" id="SignIn">SignIn</a></p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="col-Image m-5">
+                <img src="Image/signup-image.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+     </div>
+    </div>
+  </div>
+ 
+</main>    
+   
+
+<!-- SCRIPT  -->
+<script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
